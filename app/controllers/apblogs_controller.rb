@@ -1,4 +1,5 @@
 class ApblogsController < ApplicationController
+	before_action :authenticate_user!
   def index
     @apblogs = Apblog.all
   end

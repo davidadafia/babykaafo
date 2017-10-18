@@ -1,4 +1,5 @@
 class BpblogsController < ApplicationController
+	before_action :authenticate_user!
   def index
     @bpblogs = Bpblog.all
   end

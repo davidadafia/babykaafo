@@ -1,4 +1,5 @@
 class DpblogsController < ApplicationController
+	before_action :authenticate_user!
   def index
     @dpblogs = Dpblog.all
   end
