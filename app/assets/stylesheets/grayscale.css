@@ -101,6 +101,7 @@ a:focus {
   outline: none;
   background-color: transparent;
 }
+
 .navbar-custom .nav li.active {
   outline: none;
 }
@@ -110,9 +111,14 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
+
+.navbar-custom .nav li ul.dropdown-menu {
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
+    padding: 15px 0;
     border-bottom: none;
     letter-spacing: 1px;
     background: pink;
@@ -125,6 +131,7 @@ a:focus {
     background: #c0809c;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
 }
 
 

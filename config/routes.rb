@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users
+  get 'apblogs/index'
+
+  get 'apblogs/show'
+
+  get 'dpblogs/index'
+
+  get 'dpblogs/show'
+
+  get 'bpblogs/index'
+
+  get 'bpblogs/show'
+
   get 'project/index'
 
   get 'project/show'
@@ -25,10 +40,10 @@ Rails.application.routes.draw do
   get 'services/a1'
   get 'services/a2'
   get 'services/a3'
-
-
   get 'homes/index'
 
+
+  mount Commontator::Engine => '/commontator'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -43,6 +58,20 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+
+  resources :bpblogs
+  resources :dpblogs
+  resources :apblogs
+
+  resources :bpblogs do
+    resources :title, :id, :body, :blopic, :writer
+  end
+  resources :dpblogs do
+    resources :title, :id, :body, :blopic, :writer
+  end
+  resources :apblogs do
+    resources :title, :id, :body, :blopic, :writer
+  end
 
   # Example resource route with options:
   #   resources :products do

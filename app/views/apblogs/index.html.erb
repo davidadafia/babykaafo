@@ -1,0 +1,23 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container">
+     <h1 class="text-left"><strong> Welcome <% if current_user %><%= current_user.user_name %><% end %> </strong> </h1>
+    <br>
+    <h1 class="text-center"></h1>
+    <div class="row" id="features">
+    	<% for apblog in @apblogs %>
+				<div class="col-sm-4 feature">
+						<%= raw(apblog.blopic) %>
+						<h2 class="text-center"><%= link_to apblog.title, apblog_path(apblog) %></h2>
+                        <h6 class="text-muted text-right"><%= apblog.writer %></h6>						
+				</div><!-- end feature -->
+		<% end %>
+    </div>
+    
+            </div>
+    
+
+

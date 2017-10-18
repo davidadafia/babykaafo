@@ -1,0 +1,2 @@
+module ApblogsHelper
+end
