@@ -1,0 +1,2 @@
+module BvideosHelper
+end

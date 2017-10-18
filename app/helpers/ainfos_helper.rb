@@ -1,0 +1,2 @@
+module AinfosHelper
+end

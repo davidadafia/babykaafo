@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  get 'ainfos/index'
+
+  get 'ainfos/show'
+
+  get 'dinfos/index'
+
+  get 'dinfos/show'
+
+  get 'binfos/index'
+
+  get 'binfos/show'
+
+  get 'avideos/index'
+
+  get 'avideos/show'
+
+  get 'dvideos/index'
+
+  get 'dvideos/show'
+
+  get 'bvideos/index'
+
+  get 'bvideos/show'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -62,6 +86,9 @@ Rails.application.routes.draw do
   resources :bpblogs
   resources :dpblogs
   resources :apblogs
+  resources :bvideos
+  resources :dvideos
+  resources :avideos
 
   resources :bpblogs do
     resources :title, :id, :body, :blopic, :writer
@@ -72,7 +99,15 @@ Rails.application.routes.draw do
   resources :apblogs do
     resources :title, :id, :body, :blopic, :writer
   end
-
+  resources :bvideos do
+    resources :tltle, :body
+  end
+  resources :dvideos do
+    resources :tltle, :body
+  end
+  resources :avideos do
+    resources :tltle, :body
+  end
   # Example resource route with options:
   #   resources :products do
   #     member do

@@ -1,0 +1,21 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container">
+     <h1 class="text-left"><strong> Welcome <% if current_user %><%= current_user.user_name %><% end %> </strong> </h1>
+    <br>
+    <h1 class="text-center"></h1>
+    <div class="row" id="features">
+    	<% for bvideo in @bvideos %>
+				<div class="col-sm-4 feature">
+						<%= raw(bvideo.body) %>
+				</div><!-- end feature -->
+		<% end %>
+    </div>
+    
+            </div>
+    
+
+

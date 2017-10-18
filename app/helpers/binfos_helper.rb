@@ -1,0 +1,2 @@
+module BinfosHelper
+end
