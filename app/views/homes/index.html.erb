@@ -1,25 +1,416 @@
- <!-- Intro Header -->
-<header class="intro"> </header>
- <div class="header1 intro"></div>
- <div class="header3 intro"></div>
-   
-
-<div class="container">
-    <div class="header">
-        <div class="clr"></div>
+  <section class="hero" id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-right navicon">
+          <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center inner">
+          <div class="animatedParent">
+            <h1 class="animated fadeInDown">RossGold Child and Maternal Care </h1>
+            <h1 style="color: white;">ROSSGOLD</h1>
+            <br>
+            <p class="animated fadeInUp">Changing the world one child at a time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <a href="#about" class="btn btn-skin btn-scroll">Learn more</a>
+        </div>
+      </div>
     </div>
-    <div class="sp-container">
-        <div class="sp-content">
-            <div class="sp-globe"></div>
+  </section>
 
-                <h2 class="frame-5"><div>BabyKaafo</div>
-                
-                 <span>Building</span> <span>a better society</span><br>
-                  <span><p>one child at a time.</p></span>
-                  </h2>
-   
+
+  <!-- Navigation -->
+  <div id="navigation">
+    <nav class="navbar navbar-custom" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="site-logo">
+              <a href="index.html" class="brand">RossGold</a>
+            </div>
+          </div>
+
+
+          <div class="col-md-10">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li> <% if current_user %>
+                    <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>
+                    <% else %></li>
+                    <li class="page-scroll">  <%= link_to 'LOGIN', '/users/sign_in' %></li>
+                    <li class="page-scroll"> <%= link_to 'SIGNUP', '/users/sign_up' %></li>
+                    <% end %> 
+              </ul>
+            </div>
+            <!-- /.Navbar-collapse -->
+
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </nav>
+  </div>
+  <!-- /Navigation -->
+
+  <!-- Section: about -->
+  <section id="about" class="home-section color-dark bg-white">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="animatedParent">
+            <div class="section-heading text-center animated bounceInDown">
+              <h2 class="h-bold">About Us</h2>
+              <div class="divider-header"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+
+      <div class="row">
+
+
+        <div class="col-lg-8 col-lg-offset-2 animatedParent">
+          <div class="text-center">
+            <p>
+              RossGold brings together a team of individuals, professionals and institutions passionate about life and especially life at the birth stage to solve one of the biggest challenges facing mothers in Ghana, Africa and the world.
+               <br>
+              One of the most amazing privileges in this world is to be a mother. For it gives to us the awesome opportunity of shaping and nurturing the souls who will tomorrow shape the world.
+              
+            </p>
+            <br>
+            <div class="row">
+              <div class="col-md-6 text-center">
+            <h4>Mission</h4>
+            <p>
+              Our mission is to spread and facilitate the application of medical, relevant traditional and culturally wisdom to ensure a healthy pregnacy, chld birth and optimum health for mothers and children in the first five years after child birth.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <h4>Vision</h4>
+            <p>
+              Our vision is to help reduce maternal and child mortality rates in Ghana and to also ensure that mothers and children have ready access to relevant information and medical services. Changing the world one child at a time.
+            </p>
+          </div>
+          <br>
+          </div>
+            <a href="#service" class="btn btn-skin btn-scroll">Our Services</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- /Section: about -->
+
+  <section>
+    <div class="text-center">
+      <div class="container">
+
+
+        <div class="row">
+        <div class="text-center"><h2>TEAM</h2></div>
+        <br>
+       
+          <div class="col-lg-4 col-sm-4 col-md-4">
+              <img src="/assets/13.png", class="img-responsive img-thumbnail img-circle">
+              <h5>Rosaline Dodoo</h5>
+            <br>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 col-md-4">
+              <img src="/assets/13.png", class="img-responsive img-thumbnail img-circle">
+              <h5>Likea Bridge</h5>
+            <br>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 col-md-4">
+              <img src="/assets/13.png", class="img-responsive img-thumbnail img-circle">
+              <h5>Troubled Waters</h5>
+            <br>
+          </div>
+
 
         </div>
+      </div>
     </div>
-</div>
+  </section>
+  <!-- /Section: about -->
+  
+  <section id="parallax1" class="home-section parallax text-light" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h2 class="big-heading highlight-dark wow bounceInDown" data-wow-delay="0.2s">“Advancing Research on African Development”</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <!-- Section: services -->
+  <section id="service" class="home-section color-dark bg-gray">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div>
+            <div class="section-heading text-center">
+              <h2 class="h-bold">Services </h2>
+              <div class="divider-header"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <div class="container">
+
+        <div class="row animatedParent">
+          <div class="col-md-4">
+            <div class="animated rotateInDownLeft">
+              <div class="service-box">
+                <div class="service-desc">
+                  <h5>ADVICE</h5>
+                  <div class="divider-header"></div>
+                  <p>
+                  </p>
+                  <%= link_to 'Learn More',services_index_path, :style => "color: black;", :class => "btn btn-skin"%>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animated rotateInDownLeft slow">
+              <div class="service-box">
+                <div class="service-desc">
+                  <h5>PROJECTS</h5>
+                  <div class="divider-header"></div>
+                  <p>
+                  </p>
+                  <%= link_to 'Learn More',project_index_path, :style => "color: black;", :class => "btn btn-skin"%>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="animated rotateInDownLeft slower">
+              <div class="service-box">
+                <div class="service-desc">
+                  <h5>CONSULTANCY</h5>
+                  <div class="divider-header"></div>
+                  <p>
+                  </p>
+                  <%= link_to 'Learn More',consult_index_path, :style => "color: black;", :class => "btn btn-skin"%>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="text-center">
+      <div class="container">
+
+        <div class="row animatedParent">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="animated rotateInDownLeft">
+              <div class="service-box">
+                <div class="service-desc">
+                  <h5>SHOP</h5>
+                  <div class="divider-header"></div>
+                  <p>
+                    COMING SOON!!!
+                  </p>
+                  <%= link_to 'Learn More',shop_index_path, :style => "color: black;", :class => "btn btn-skin"%>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: services -->
+
+
+  <!-- Section: works -->
+  <section id="works" class="home-section color-dark text-center bg-white">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div>
+            <div class="animatedParent">
+              <div class="section-heading text-center">
+                <h2 class="h-bold animated bounceInDown">Portfolio</h2>
+                <div class="divider-header"></div>
+                <p><!--View some of our listing--></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row animatedParent">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+          <div class="row gallery-item">
+            <div class="col-md-3 animated fadeInUp">
+              <a href="/assets/1.jpg" title="TEMA" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+                <img src="/assets/1.jpg" class="img-responsive" alt="img">
+              </a>
+            </div>
+            <div class="col-md-3 animated fadeInUp slow">
+              <a href="/assets/2.jpg" title="KAKANSUNANKA" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+                <img src="/assets/2.jpg" class="img-responsive" alt="img">
+              </a>
+            </div>
+            <div class="col-md-3 animated fadeInUp slower">
+              <a href="/assets/3.jpg" title="NUNGUA" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+                <img src="/assets/3.jpg" class="img-responsive" alt="img">
+              </a>
+            </div>
+            <div class="col-md-3 animated fadeInUp">
+              <a href="/assets/1.jpg" title="ACCRA" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+                <img src="/assets/1.jpg" class="img-responsive" alt="img">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- /Section: works -->
+  <section id="parallax3" class="home-section parallax text-light" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h2 class="big-heading highlight-dark wow bounceInDown" data-wow-delay="0.2s">“BRAINS BEHIND GREAT DECISIONS”</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Section: contact -->
+  <section id="contact" class="home-section nopadd-bot color-dark bg-white text-center">
+    <div class="container marginbot-50">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="animatedParent">
+            <div class="section-heading text-center">
+              <h2 class="h-bold animated bounceInDown">Contact us</h2>
+              <div class="divider-header"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>+233 (0)50 123 4567 </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>info@rossgold.com</p>
+            <br>
+            <p>
+              <a href="mailto:info@lesra.com"><button type="submit" class="btn btn-primary btn-lg btn-block" style="color: black;">Send Message</button></a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-clock-o fa-3x mb-3 sr-contact"></i>
+            <p>Monday - Friday: 7am - 5pm</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <br>
+   <section>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <h2 class="section-title"></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: contact -->
+  <br>
+  <br>
+  <!-- google map -->
+  <div class="text-center">
+  <p id="map-btn2" class="text-center btn btn-blood btn-lg btn-noradius gmap-btn close-map-button btn-hide" data-placement="top" style="color: black;">
+    Teshie Nungua Estate, Accra-Ghana 
+    <div style="display: horizontal">
+              <ul>
+                <a href="#" ><i class="fa fa-facebook"></i></a> |
+                
+                <a href="#" ><i class="fa fa-twitter"></i></a> |
+                
+                <a href="#" ><i class="fa fa-instagram"></i></a>
+              </ul>
+            </div>
+    </p>
+  </div>
+  <!-- google map -->
+  <section id="map" class="close-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7941.34795919646!2d-0.046913042339332155!3d5.615068867180036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf86ef08de8895%3A0xe6ffb8fe0118ff81!2zNcKwMzcnMDEuNyJOIDDCsDAyJzUzLjgiVw!5e0!3m2!1sen!2sgh!4v1527384450558" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
+  <!-- /google map -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center copyright" style="font-size: 1.1em;">
+          &copy; 2017 - 2018 Copyright RossGold. All Rights Reserved
+          
+          <div class="credits" style="color: white;">
+            <a href="#">Website Made by David Adafia | +233 (0)24 2911 291 | davidadfia@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

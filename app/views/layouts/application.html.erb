@@ -5,119 +5,67 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="BABYKAAFO">
+  <meta name="description" content=".">
   <meta name="author" content="David Adafia">
-  <title>BABYKAAFO</title>
+  <title>ROSSGOLD</title>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    "/assets/grayscale.css" %>
-  <%= stylesheet_link_tag    "/assets/bootstrap.css" %>
-  <%= stylesheet_link_tag    "/assets/font-awesome.css" %>
-</head>
-<body>
- <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div >
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="/homes/index">
-                     <span class="light">BabyKaafo</span>
-                </a>
-            </div>
+  
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <%= link_to 'ABOUT',about_index_path %>
-                    </li>
-                    <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" >Services <strong class="caret" href="#"></strong></a>
-                                
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <%= link_to 'ADVICE',services_index_path %>
-                                    </li>
-                                    
-                                    <li>
-                                        <%= link_to 'PROJECTS',project_index_path %>
-                                    </li>
-                                    
-                                    <li>
-                                        <%= link_to 'SHOP',shop_index_path %>
-                                    </li>
-                                                                                                            
-                                    <li>
-                                        <%= link_to 'CONSULTANCY',consult_index_path %>
-                                    </li>
-                                </ul><!-- end dropdown-menu -->
-                    </li>
-                    
-                    <li>
-                        <%= link_to 'CONTACT US',contact_index_path %>
-                    </li>
-                    <li> <% if current_user %>
-                    <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>
-                    <% else %></li>
-                    <li class="page-scroll">  <%= link_to 'LOGIN', '/users/sign_in' %></li>
-                    <li class="page-scroll"> <%= link_to 'SIGNUP', '/users/sign_up' %></li>
-                    <% end %> 
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <%= stylesheet_link_tag    "/assets/bootstrap.min.css" %>
+  <%= stylesheet_link_tag    "/assets/font-awesome.css" %>
+  <%= stylesheet_link_tag    "/assets/nivo-lightbox.css" %>
+  <%= stylesheet_link_tag    "/assets/default.css" %>
+  <%= stylesheet_link_tag    "/assets/animations.css" %>
+  <%= stylesheet_link_tag    "/assets/style.css" %>
+  <%= stylesheet_link_tag    "/assets/defaultt.css" %>
+
+  
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+  <!-- page loader -->
+  <div id="page-loader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container con1">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
         </div>
-        <!-- /.container -->
-    </nav>
+        <div class="spinner-container con2">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+        </div>
+        <div class="spinner-container con3">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /page loader -->
 
 <%= yield %>
 
- <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-12">
-                        <h3>SPONSORS</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; babykaafo 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
-<%= javascript_include_tag "/assets/bootstrap.js" %>
-<%= javascript_include_tag "/assets/jquery.js" %>
-<%= javascript_include_tag "/assets/grayscale.js" %>
+<%= javascript_include_tag "/assets/jquery.min.js" %>
+<%= javascript_include_tag "/assets/bootstrap.min.js" %>
+<%= javascript_include_tag "/assets/jquery.sticky.js" %>
+<%= javascript_include_tag "/assets/stellar.js" %>
+<%= javascript_include_tag "/assets/jquery.easing.min.js" %>
+<%= javascript_include_tag "/assets/jquery.scrollTo.js" %>
+<%= javascript_include_tag "/assets/jquery.appear.js" %>
+<%= javascript_include_tag "/assets/nivo-lightbox.min.js" %>
+<%= javascript_include_tag "/assets/custom.js" %>
+<%= javascript_include_tag "/assets/css3-animate-it.js" %>
+<%= javascript_include_tag "/assets/gmap.js" %>
+
+
 </body>
 </html>

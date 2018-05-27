@@ -14,3 +14,14 @@
  *= require_self
  *= require commontator/application
  */
+@import "font-awesome.min.css";
+
+@media (min-width: 750px) {
+    background: -webkit-linear-gradient(90deg, #FF762F 10%, #DD5576 90%);
+    background: -moz-linear-gradient(90deg, #FF762F 10%, #DD5576 90%);
+    background: -ms-linear-gradient(90deg, #FF762F 10%, #DD5576 90%);
+    background: -o-linear-gradient(90deg, #FF762F 10%, #DD5576 90%);
+    background: linear-gradient(90deg, #FF762F 10%, #DD5576 90%);
+    font-family: 'Open Sans', sans-serif!important;
+    
+}
