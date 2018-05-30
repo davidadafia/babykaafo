@@ -1107,66 +1107,41 @@ a.btn:focus{
 Parallax
 ============================= */
 
-#parallax1{ 
-  background-image: url("/assets/p1.jpg");
+.parallax { 
+    /* The image used */
+    background-image: url("/assets/p1.jpg");
+
+    /* Set a specific height */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    display:block;
-    position:relative;
-    z-index:120; 
-}
-
-#parallax1:after {  
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0.9;
-  z-index: -1;
+    background-size: cover;
 }
 
 
-#parallax2{ 
-  background-image: url("/assets/p2.jpg");
+.parallaxs { 
+    /* The image used */
+    background-image: url("/assets/p3.jpg");
+
+    /* Set a specific height */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    display:block;
-    position:relative;
-    z-index:120; 
+    background-size: cover;
+
 }
 
-#parallax2:after  { 
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0.9;
-  z-index: -1;
-}
 
-#parallax3{ 
-  background-image: url("/assets/p3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    display:block;
-    position:relative;
-    z-index:120; 
-}
+h2.paratext{
+	color: white;
+	font-size: 50px;
+	font-weight: 600;
+	padding:30px;
+	background-color: rgba(0,0,0,.5);
+	display: inline-block;
 
-#parallax3:after  { 
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0.9;
-  z-index: -1;
 }
